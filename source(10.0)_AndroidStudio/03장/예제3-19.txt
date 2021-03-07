@@ -1,0 +1,9 @@
+public class exam10 {
+	public static void main(String args[]) {
+		Animal tiger1 = new Tiger();
+		Animal eagle1 = new Eagle();
+		
+		tiger1.move();
+		eagle1.move();		
+	}
+}

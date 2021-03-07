@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <CheckBox
+        android:id="@+id/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="안드로이드폰" />
+
+    <CheckBox
+        android:id="@+id/iphone"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="아이폰" />
+
+    <CheckBox
+        android:id="@+id/window"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="윈도폰" />
+
+</LinearLayout>

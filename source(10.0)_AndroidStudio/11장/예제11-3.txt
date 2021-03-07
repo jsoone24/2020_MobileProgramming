@@ -1,0 +1,38 @@
+package com.cookandroid.project11;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        setTitle("¸®½ºÆ®ºä Å×½ºÆ®");
+
+        final String[] mid = { "È÷¾î·ÎÁî", "24½Ã", "·Î½ºÆ®", "·Î½ºÆ®·ë", "½º¸ôºô", "Å½Á¤¸ùÅ©",
+                "ºò¹ðÀÌ·Ð", "ÇÁ·»Áî", "µ¦½ºÅÍ", "±Û¸®", "°¡½±°É", "Å×ÀÌÅ«", "½´ÆÛ³»Ãß·²", "ºêÀÌ" };
+
+        ListView list = (ListView) findViewById(R.id.listView1);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_multiple_choice, mid);
+        list.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+        list.setAdapter(adapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+                                    long arg3) {
+                Toast.makeText(getApplicationContext(), mid[arg2],
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
+}

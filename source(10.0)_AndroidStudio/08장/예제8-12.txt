@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/btnMkdir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SD카드에 디렉터리 생성" />
+
+    <Button
+        android:id="@+id/btnRmdir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SD카드에서 디렉터리 삭제" />
+
+</LinearLayout>

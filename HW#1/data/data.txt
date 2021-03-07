@@ -1,0 +1,6 @@
+10000
+5
+Coke,Sprite,HotChocolate,IceAmericano,Water,
+1000,1000,500,500,500,
+0,10,10,10,10,
+COLD,COLD,HOT,COLD,MEDIUM,

@@ -1,0 +1,11 @@
+include ':assignment_10'
+include ':assignment_9'
+include ':assignment_8'
+include ':assignment_7'
+include ':assignment_6'
+include ':assignment_5'
+include ':assignment_4'
+include ':assignment_3'
+include ':assignment_2'
+include ':assignment_1'
+rootProject.name = "Class"

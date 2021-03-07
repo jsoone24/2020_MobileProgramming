@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/itemRotate"
+        android:title="그림 회전">
+    </item>
+
+    <group android:checkableBehavior="single" >
+        <item
+            android:id="@+id/item1"
+            android:checked="true"
+            android:title="한라산">
+        </item>
+        <item
+            android:id="@+id/item2"
+            android:title="추자도">
+        </item>
+        <item
+            android:id="@+id/item3"
+            android:title="범섬">
+        </item>
+    </group>
+
+</menu>

@@ -1,0 +1,17 @@
+cd \CookAndroid\sdk\platform-tools
+dir adb*.exe
+adb root
+adb shell
+# cd  /data/data/com.cookandroid.project12_1
+# ls
+# mkdir databases
+# cd databases
+# pwd
+# sqlite3  mydb
+sqlite> CREATE TABLE product (prodName  CHAR(10),  price  INT, mDate  char(8), company  char(10), amount int);
+sqlite> INSERT INTO product VALUES('TV',100,'20170722','Samsung',55);
+sqlite> INSERT INTO product VALUES('Computer',150,'20190505','LG',7);
+sqlite> INSERT INTO product VALUES('Monitor',50,'20210909','Daewoo',33);
+sqlite> .header  on
+sqlite> .mode  column
+sqlite> SELECT * FROM product;
